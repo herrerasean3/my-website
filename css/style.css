@@ -1,13 +1,23 @@
-*   {
-    padding: 0;
-    margin: 0;
+h1  {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h2  {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3  {
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px 0;
 }
 
 /* Background pattern from Subtle Patterns */
 body    {
     background: url(../images/dark_exa_@2x.png);
     position: absolute;
-    height: 10vh;
 }
 
 header {
@@ -44,48 +54,90 @@ nav ul li   {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    transition: .3s;
+    background: rgba(80,80,80,1)
+}
+
+nav ul li:first-child {
+    border-left: 3px solid #000;
+}
+
+nav ul li:last-child {
+    border-right: 3px solid #000;
 }
 
 main    {
-    top: 15%;
-    height: 60%;
+    float: right;
+    width: 65%;
 }
 
 aside   {
-    float: left;
     width: 33%;
-    background-color: rgba(125,125,125,0.7);
-    margin: 19vh auto;
+    float: left;
 }
 
-aside div   {
+aside div  {
+    background-color: rgba(125,125,125,0.7);
+    margin: 19vh auto 0 auto;
+}
+
+aside div .asidecontent   {
     background: rgba(125,125,125,0.5);
-    margin: 20px 10px;
+    padding: 5px;
+    margin: 15px 10px;
+}
+
+div ul {
+    margin: 10px 0;
+}
+
+div ul li {
+    margin: 10px 0;
+}
+
+.altmain {
+    width: 100%;
 }
 
 .contentbox {
-    float: right;
-    width: 66%;
     background-color: rgba(125,125,125,0.7);
     margin: 19vh auto 0 auto;
 }
 
 .contentbox div {
     background: rgba(125,125,125,0.5);
+    padding: 5px;
     margin: 15px 10px;
+}
+
+.contentbox div p   {
+    margin: 5px 0;
 }
 
 div a   {
     color: #fff;
 }
 
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+.inputbox   {
+}
+
 footer {
-    position: absolute;
+    clear: both;
     background: rgba(125,125,125,0.5);
-    margin: 80vh auto 0 auto;
+    margin: 0 auto;
 }
 
 footer div  {
     background: rgba(125,125,125,0.5);
     margin: 20px 10px;
+    padding: 5px;
 }
